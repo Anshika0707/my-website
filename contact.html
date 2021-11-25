@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width" , initialscale="1.0">
+    <title>Website Designs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo%20without%20bg.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+    <!------- contact us  -------->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41264374652!2d72.75225623680046!3d21.15934583219656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1636281567872!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5 id="boldtext"> NM Mavani Rd , Sns Splendid</h5>
+                        <p>Vesu , Surat , Gujarat</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5 id="boldtext">+91 93284 10560</h5>
+                        <p>Monday-Saturday , 10AM To 8PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5 id="boldtext">visualstories77@gmail.com</h5>
+                        <p>Email Us Your Enquiry</p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="mailto:sehgalanshika88@gmail.com">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------- Footer -------->
+
+    <section class="footer">
+
+        <p>We Customize Websites, Logo, Apps & Business Cards</p>
+        <div class="icons">
+            <button id="insta" class="instaonclick"><img src="instagram.png"></button>
+            <script type="text/javascript">
+                document.getElementById("insta").onclick = function () {
+                    location.href = "https://www.instagram.com/visualstories__7/";
+                };
+            </script>
+            &nbsp;&nbsp;
+            <button id="whatsapp" class="whatsapponclick"><img src="whatsapp png.png"></button>
+            <script type="text/javascript">
+                document.getElementById("whatsapp").onclick = function () {
+                    location.href = "https://chat.whatsapp.com/F4W56B2j8mP5GBBIT8c6Bt";
+                };
+            </script>
+            &nbsp;&nbsp;
+            <button id="insta" class="instaonclick"><img src="twitter.png"></button>
+            <script type="text/javascript">
+                document.getElementById("insta").onclick = function () {
+                    location.href = "https://twitter.com/AnshikaSehgal5";
+                };
+            </script>
+        </div>
+        <br>
+        <p class="para">Made With ♥ <i fa fa-heart-o></i>by Anshika Sehgal</p>
+        <p class="reserved">© 2021 Visual Stories. All Rights Reserved.</p>
+    </section>
+
+
+    <!--------Javascript for Toogle Menu-------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

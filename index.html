@@ -1,0 +1,166 @@
+<html>
+    
+<head>
+    <meta name="viewport" content="with=device-width" , initialscale="1.0">
+    <title>Website Designs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo%20without%20bg.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>VISUAL STORIES</h1>
+            <P>Making website is now one of the easiest thing. You just need to learn HTML , CSS <br> Javascript and you
+                are good to go. </P>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!----- Course ----->
+
+    <section class="course">
+        <h1>How We Make Your Website... </h1>
+        <p>“Make it work, make it right, make it fast.” </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Python</h3>
+                <p>Python is one of the top computer programming courses in India & a computer language which is quite
+                    popular these days since it has machine learning elements integrated with it. </p>
+            </div>
+            <br>
+            <div class="course-col">
+                <h3>JavaScript</h3>
+                <p>JavaScript is a programming language commonly used in web development. ... JavaScript is a
+                    client-side scripting language, which means the source code is processed by the client's web browser
+                    rather than on the web server. </p>
+            </div>
+            <br>
+            <div class="course-col">
+                <h3>CSS</h3>
+                <p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core
+                    technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and
+                    aural) layout, for a variety of devices.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>“The Quicker Picker Upper”</p>
+        <div class="row">
+            <div class="services-col">
+                <img src="website.jpg">
+                <h3>Website</h3>
+                <p>Create a website that demands a second look and get found online with marketing
+                    tools that put your businessin all the right places.</p>
+            </div>
+            <div class="services-col">
+                <img src="logo.jpg">
+                <h3>Logo</h3>
+                <p>“The definition of a logo is a graphic mark or symbol that is
+                    used by an organization to help identify their products, services, or functions. It can be an
+                    abstract or real-world symbol, an emblem, or a wordmark set in some sort of typeface.”
+                </p>
+            </div>
+            <div class="services-col">
+                <img src="app.jpg">
+                <h3>App</h3>
+                <p>We create apps and customized apps too, </p>
+            </div>
+            <div class="services-col">
+                <img src="business card.jpg">
+                <h3>Business Card</h3>
+                <p>Make a great first impression by creating a unique business card design in Canva.
+                    Choose from thousands of templates created by professional designer and download or print your
+                    own custom cards.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---- Call To Action ----->
+
+    <section class="cta">
+        <h1>Log In To Know More About The Website </h1>
+        <a href="" class="hero-btn">Log In</a>
+    </section>
+
+ <!---- Footer ----->
+
+ <section class="footer">
+<h4>About Us</h4>
+<p>We Customize Websites, Logo, Apps & Business Cards</p>
+<div class="icons">
+    <button id="insta" class="instaonclick"><img src="instagram.png"></button>
+    <script type="text/javascript">
+    document.getElementById("insta").onclick = function(){
+        window.open("https://www.instagram.com/visualstories__7/" , "_blank") ;
+    };
+    </script>
+    &nbsp;&nbsp;
+     <button id="whatsapp" class="whatsapponclick"><img src="whatsapp png.png"></button>
+     <script type="text/javascript">
+     document.getElementById("whatsapp").onclick = function(){
+        window.open("https://chat.whatsapp.com/F4W56B2j8mP5GBBIT8c6Bt" , "_blank") ;
+
+     };
+     </script>
+   &nbsp;&nbsp;
+      <button id="twitter" class="twitteronclick"><img src="twitter.png"></button>
+      <script type="text/javascript">
+      document.getElementById("twitter").onclick = function(){
+          window.open("https://twitter.com/AnshikaSehgal5" , "_blank");
+      };
+      </script>
+</div>
+<br>
+<p class="para">Made With ♥ <i fa fa-heart-o></i>by Anshika Sehgal</p>
+<p class="reserved">© 2021 Visual Stories. All Rights Reserved.</p>
+ </section>
+
+
+
+
+    <!--------Javascript for Toogle Menu-------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

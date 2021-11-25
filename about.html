@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width" , initialscale="1.0">
+    <title>Website Designs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo%20without%20bg.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+    <!------- about us content -------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 class="heading">Our purpose:</h1>
+                <p class="paragraph">To deliver on the promise of technology ,We hold the power of change to create
+                    value
+                    in every direction...
+                    <p class="para2">Welcome to Visual Stories, your number one source for all things [Websites, Logo,
+                        Apps and lot more]. <br>We're dedicated to giving you <br>the very best of [Websites, Logo, Apps and
+                        lot more] .
+
+
+                        <br> Visual Stories can offer you [competitive differentiator - e.g. "the world's most advanced
+                        toothbrush"].<br> We now serve customers all over [place - town, country, <br>the world], and
+                        are thrilled that we're able to turn our<br> passion into our own website.
+
+
+                        <br> We hope you enjoy our products as much as we enjoy offering them to you. If you have any
+                        questions or <br>comments, please don't hesitate to contact us.
+                    </p>
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+                </div>
+                 <div class="about-col">
+                     <img src="background employees.jpg" >
+
+            </div>
+
+        </div>
+
+    </section>
+    <center>
+    <section id="make">
+    <p>“The Quicker Picker Upper”</p>
+    <div class="row">
+        <div class="portfolio-col">
+            <img src="website.jpg">
+            <h3>Website</h3>
+            <p>Create a website that demands a second look and get found online with marketing
+                tools that put your businessin all the right places.</p>
+        </div>
+        <div class="portfolio-col">
+            <img src="logo.jpg">
+            <h3>Logo</h3>
+            <p>“The definition of a logo is a graphic mark or symbol that is
+                used by an organization to help identify their products, services, or functions. It can be an
+                abstract or real-world symbol, an emblem, or a wordmark set in some sort of typeface.”
+            </p>
+        </div>
+        <div class="portfolio-col">
+            <img src="app.jpg">
+            <h3>App</h3>
+            <p>We create apps and customized apps too, </p>
+        </div>
+        <div class="portfolio-col">
+            <img src="business card.jpg">
+            <h3>Business Card</h3>
+            <p>Make a great first impression by creating a unique business card design in Canva.
+                Choose from thousands of templates created by professional designer and download or print your
+                own custom cards.
+            </p>
+        </div>
+    </div>
+</section>
+</center>  
+</section>
+
+
+
+
+    <section class="footer">
+       
+        <p>We Customize Websites, Logo, Apps & Business Cards</p>
+        <div class="icons">
+            <button id="insta" class="instaonclick"><img src="instagram.png"></button>
+            <script type="text/javascript">
+                document.getElementById("insta").onclick = function () {
+                    location.href = "https://www.instagram.com/visualstories__7/";
+                };
+            </script>
+            &nbsp;&nbsp;
+            <button id="whatsapp" class="whatsapponclick"><img src="whatsapp png.png"></button>
+            <script type="text/javascript">
+                document.getElementById("whatsapp").onclick = function () {
+                    location.href = "https://chat.whatsapp.com/F4W56B2j8mP5GBBIT8c6Bt";
+                };
+            </script>
+            &nbsp;&nbsp;
+            <button id="insta" class="instaonclick"><img src="twitter.png"></button>
+            <script type="text/javascript">
+                document.getElementById("insta").onclick = function () {
+                    location.href = "https://twitter.com/AnshikaSehgal5";
+                };
+            </script>
+        </div>
+        <br>
+        <p class="para">Made With ♥ <i fa fa-heart-o></i>by Anshika Sehgal</p>
+        <p class="reserved">© 2021 Visual Stories. All Rights Reserved.</p>
+    </section>
+
+
+    <!--------Javascript for Toogle Menu-------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
